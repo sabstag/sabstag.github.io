@@ -1,0 +1,175 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto Condensed', 'sans-serif';
+}
+
+.header{
+  width: 100%;
+  background-color: white;
+  height: 7em;
+}
+
+#logo{
+  width: 5em;
+  float: left;
+  margin: .8em 0 0 10%;
+}
+
+ul{
+  font-size: 1.2em;
+  font-weight: 700;
+  float: right;
+  margin: 2.6em 9% 0 0;
+}
+
+.header li{
+  list-style-type: none;
+}
+
+.menu a{
+  padding: 1.6em;
+  display: inline;
+}
+
+.btn .menu {
+  display: block;
+}
+
+.btn-link {
+  display: none;
+}
+
+.main{
+  background-color: black;
+  overflow: auto;
+  width: 100%;
+}
+
+.post{
+  color: #d1d1e0;
+  display: inline;
+}
+
+.post img{
+  padding: 50px 20px 20px 130px;
+  width: 50%;
+}
+
+.post h1{
+  margin: 0;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.post p{
+  padding: 0px 150px 0px 130px;
+  font-size: 1em;
+}
+
+.post p:last-child{
+  margin-bottom: 0;
+  padding-bottom: 2em;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: .6em;
+  margin: 0 auto;
+}
+
+#iconE, #iconP, #iconL{
+  width: 3%;
+  margin: 0 .5% .6em .5%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+
+#iconE:hover, #iconL:hover, #iconP:hover{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 900px){
+  html{
+    font-size: 14px;
+  }
+
+  .footer{
+    clear: right;
+  }
+
+  #iconE, #iconP, #iconL{
+    width: 5%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .post img{
+    width: 100%;
+    padding: 10%;
+    padding-bottom: 2em;
+  }
+
+  .post h1{
+    padding-left: 10%
+  }
+
+  .post p{
+    padding: 0 10%;
+  }
+
+  #iconE, #iconP, #iconL{
+    width: 7%;
+  }
+
+  iframe{
+    padding-left: 4em;
+  }
+}
+
+@media only screen and (max-width: 480px){
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  .btn .menu {
+    display: none;
+  }
+
+  .btn:hover .menu {
+    display: block;
+  }
+
+  .btn-link {
+    display: block;
+    float: right;
+    padding: 18px 30px;
+    cursor: pointer;
+  }
+
+  .menu a{
+    display: block;
+    padding: 1em;
+  }
+
+  iframe{
+    padding-left: 3em;
+  }
+
+}

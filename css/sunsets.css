@@ -1,0 +1,210 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'Roboto Condensed', 'sans-serif';
+}
+
+.header{
+  width: 100%;
+  background-color: white;
+  height: 7em;
+}
+
+#logo{
+  width: 5em;
+  float: left;
+  margin: .8em 0 0 10%;
+}
+
+ul{
+  font-size: 1.2em;
+  font-weight: 700;
+  float: right;
+  margin: 2.6em 9% 0 0;
+}
+
+.header li{
+  list-style-type: none;
+}
+
+.menu a{
+  padding: 1.6em;
+  display: inline;
+}
+
+.btn .menu {
+  display: block;
+}
+
+.btn-link {
+  display: none;
+}
+
+.main{
+  background-color: black;
+  overflow: auto;
+  width: 100%
+}
+
+#cover{
+  display: inline;
+  max-width: 100%;
+  width: 25%;
+  margin: 4em 0% 2em 10%;
+}
+
+#copy{
+  width: 50%;
+  font-size: 1em;
+  float: right;
+  color: #d1d1e0;
+  margin: 5%;
+}
+
+.arrowprev {
+  width: 2%;
+  float: left;
+  margin-left: 20%;
+  margin-top: 2em;
+}
+.arrownext {
+  width: 2%;
+  float: right;
+  margin-right: 20%;
+  margin-top: 2em;
+}
+.arrow img {
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.reviews {
+  width: 100%;
+  float: right;
+  position: relative;
+  font-size: 1em;
+  color: #d1d1e0;
+  margin: auto;
+  padding-bottom: 3em;
+}
+.review {
+  display: none;
+  padding: .6em 10%;
+  border-radius: 10px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.active {
+  text-align: center;
+  display: block;
+  position: absolute;
+  padding: .6em 1%;
+  margin: auto;
+  width: 50%;
+}
+
+span{
+  font-style: italic;
+  display: block;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.2em;
+  font-weight: 700;
+  padding: .6em;
+  margin: 0 auto;
+}
+
+#iconE, #iconP, #iconL{
+  width: 3%;
+  margin: 0 .5% .6em .5%;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+
+#iconE:hover, #iconL:hover, #iconP:hover{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 900px){
+  html{
+    font-size: 14px;
+  }
+
+  .footer{
+    clear: right;
+  }
+
+  .main{
+    overflow: auto;
+  }
+
+  #iconE, #iconP, #iconL{
+    width: 5%;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  #cover{
+    width: 50%;
+    margin: 1em 25%;
+  }
+
+  #copy{
+    text-align: center;
+    width: 90%;
+    float: none;
+  }
+
+  #iconE, #iconP, #iconL{
+    width: 7%;
+  }
+}
+
+@media only screen and (max-width: 480px){
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+
+  .btn .menu {
+    display: none;
+  }
+
+  .btn:hover .menu {
+    display: block;
+  }
+
+  .btn-link {
+    display: block;
+    float: right;
+    padding: 18px 30px;
+    cursor: pointer;
+  }
+
+  .menu a{
+    display: block;
+    padding: 1em;
+  }
+
+  .reviews{
+    padding-bottom: 9em;
+  }
+
+
+}
